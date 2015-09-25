@@ -1,4 +1,17 @@
-<h1>v01</h1>
-<h1>Hello World!!!</h1>
-<h3>PHP Version <?= phpversion() ?></h3>
-<a href="/static.html">Static HTML Page</a>
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
+
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
+
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
