@@ -17,7 +17,7 @@
   "containerDefinitions": [
     {
       "name": "php-app",
-      "image": "php:fpm",
+      "image": "rafamarangoni/php-fpm-v1",
       "essential": true,
       "memory": 128,
       "mountPoints": [
